@@ -59,7 +59,7 @@ const Chat = ({
 
   useEffect(() => {
     if (socket === null) {
-      setSocket(io("http://192.168.0.107:4000"));
+      setSocket(io("https://gritchat.onrender.com"));
     }
     if (socket) {
       socket.on("receiveMessage", (message) => {
